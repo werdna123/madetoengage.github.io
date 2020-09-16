@@ -104,6 +104,7 @@ input {
    border: 0px;
    text-transform: uppercase;
    cursor: pointer;
+   -webkit-appearance: none;
 }
 
 #login-form, #forgot-password {
@@ -211,5 +212,8 @@ input {
    }
    #emailaddress, #password, #firstname, #lastname {
       width: 95%;
+   }
+   .error-lastname {
+      right: 0 !important;
    }
  }
