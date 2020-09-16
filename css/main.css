@@ -129,6 +129,7 @@ label input[type="text"] {
    top: 0px;
    font-size: 1.1rem;
    z-index: 1;
+   min-width: 300px;
 }
 
 input {
@@ -162,6 +163,36 @@ input {
    border: 1px solid red;
 }
 
+.error {
+   position: absolute;
+   z-index:100;
+   color: #000;
+   background: #fff;
+   padding: 5px;
+   font-size: 0.8rem;
+   top:38px;
+   width: 170px;
+   display: none;
+}
+
+.error-lastname {
+   right: -180px !important;
+}
+
+
+.error:before{
+   content:'';
+   display:block;
+   width:0;
+   height:0;
+   position:absolute;
+   border-top: 8px solid transparent;
+   border-bottom: 8px solid transparent;
+   border-right:8px solid #fff ;
+   left:7px;
+   top:-8px;
+}
+
 
 @media only screen and (max-width: 768px) {
    body {
@@ -172,7 +203,7 @@ input {
       background: #24323d;
       margin: 0px auto;
       border-radius: 5px;
-      padding: 10px;
+      padding: 20px;
       box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
    }
    #signup-submit, #login-submit, #password-submit {

@@ -32,18 +32,22 @@
                     <label>
                         <span class="title firstname">First Name<span class="symbol"> *</span></span>
                         <input type="text" id="firstname" name="firstname"/>
+                        <div class="error-firstname error">Please compelete this field.</div>
                     </label>
                     <label>
                         <span class="title lastname">Last Name<span class="symbol"> *</span></span>
                         <input type="text" id="lastname" name="lastname"/>
+                        <div class="error-lastname error">Please compelete this field.</div>
                     </label>
                     <label>
-                        <span class="title emailaddress">Email Address<span class="symbol"> *</span></span>
                         <input type="email" id="emailaddress" name="emailaddress"/>
+                        <span class="title emailaddress">Email Address<span class="symbol"> *</span></span>
+                        <div class="error-emailaddress error">Please compelete this field.</div>
                     </label>
                     <label>
-                        <span class="title password">Password<span class="symbol"> *</span></span>
                         <input type="password" id="password" name="password"/>
+                        <span class="title password">Password<span class="symbol"> *</span></span>
+                        <div class="error-password error">Please compelete this field.</div>
                     </label>
                     <input type="submit" id="signup-submit" value="Get Started">
                 </form>
@@ -56,10 +60,12 @@
                     <label>
                         <span class="title emailaddresslogin">Email Address<span class="symbol"> *</span></span>
                         <input type="email" id="emailaddresslogin" name="emailaddresslogin"/>
+                        <div class="error-emailaddresslogin error">Please compelete this field.</div>
                     </label>
                     <label>
                         <span class="title passwordlogin">Password<span class="symbol"> *</span></span>
                         <input type="password" id="passwordlogin" name="password"/>
+                        <div class="error-passwordlogin error">Please compelete this field.</div>
                     </label>
                     <a class="password-reset">Forgot Password?</a>
                     <input type="submit" id="login-submit" value="Log In">
@@ -74,6 +80,7 @@
                     <label>
                         <span class="title emailaddressreset">Email Address<span class="symbol"> *</span></span>
                         <input type="email" id="emailaddressreset" name="emailaddressreset"/>
+                        <div class="error-reset error">Please compelete this field.</div>
                     </label>
                     <input type="submit" id="password-submit" value="Reset Password" style="margin-top:40px;">
                 </form>
