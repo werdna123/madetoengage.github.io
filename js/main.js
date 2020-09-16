@@ -1,3 +1,5 @@
+$('form').each(function() { this.reset() });
+
 $(".signup-option").click(function(){
     $("#signup-form").show();
     $("#login-form").hide();
@@ -24,53 +26,53 @@ $(".password-reset").click(function(){
     $(".login-option").removeClass("active");
 });
 
-$(document).ready(function() {
-    $("#signup-submit").click(function(evt) {
-        evt.preventDefault();
-        if ($('#firstname').val() === '') {
-            $("#firstname").addClass("highlight");
-            $(".error-firstname").show();
-        }
-        else if ($('#lastname').val() === '') {
-            $("#lastname").addClass("highlight");
-            $(".error-lastname").show();
-        }
-        else if ($('#emailaddress').val() === '') {
-            $("#emailaddress").addClass("highlight");
-            $(".error-emailaddress").show();
-        }
-        else if ($('#password').val() === '') {
-            $("#password").addClass("highlight");
-            $(".error-password").show();
-        }
-         else {
-            window.location.href = "signup-success.html";
-        }
-    });
-    $("#login-submit").click(function(evt) {
-        evt.preventDefault();
-        if ($('#emailaddresslogin').val() === '') {
-            $("#emailaddresslogin").addClass("highlight");
-            $(".error-emailaddresslogin").show();
-        }
-        else if ($('#passwordlogin').val() === '') {
-            $("#passwordlogin").addClass("highlight");
-            $(".error-passwordlogin").show();
-        }
-         else {
-            window.location.href = "login-success.html";
-        }
-    });
-    $("#password-submit").click(function(evt) {
-        evt.preventDefault();
-        if ($('#forgot-password input').val() === '') {
-            $("#forgot-password input").addClass("highlight");
-            $(".error-reset").show();
-        }
-         else {
-            window.location.href = "reset-success.html";
-        }
-    });
+$("#signup-submit").click(function(evt) {
+    evt.preventDefault();
+    if ($('#firstname').val() === '') {
+        $("#firstname").addClass("highlight");
+        $(".error-firstname").show();
+    }
+    else if ($('#lastname').val() === '') {
+        $("#lastname").addClass("highlight");
+        $(".error-lastname").show();
+    }
+    else if ($('#emailaddress').val() === '') {
+        $("#emailaddress").addClass("highlight");
+        $(".error-emailaddress").show();
+    }
+    else if ($('#password').val() === '') {
+        $("#password").addClass("highlight");
+        $(".error-password").show();
+    }
+        else {
+        window.location.href = "signup-success.html";
+    }
+});
+
+$("#login-submit").click(function(evt) {
+    evt.preventDefault();
+    if ($('#emailaddresslogin').val() === '') {
+        $("#emailaddresslogin").addClass("highlight");
+        $(".error-emailaddresslogin").show();
+    }
+    else if ($('#passwordlogin').val() === '') {
+        $("#passwordlogin").addClass("highlight");
+        $(".error-passwordlogin").show();
+    }
+        else {
+        window.location.href = "login-success.html";
+    }
+});
+
+$("#password-submit").click(function(evt) {
+    evt.preventDefault();
+    if ($('#forgot-password input').val() === '') {
+        $("#forgot-password input").addClass("highlight");
+        $(".error-reset").show();
+    }
+        else {
+        window.location.href = "reset-success.html";
+    }
 });
 
 $("#firstname").bind("keyup", function(e) {
